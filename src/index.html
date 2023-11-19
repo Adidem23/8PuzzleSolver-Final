@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+
+    <title>8-Puzzle Solver</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- build:css -->
+    <link rel="stylesheet" href="../node_modules/vis/dist/vis.min.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <!-- endbuild -->
+</head>
+
+<body>
+    <div id="board">
+        <div id="board-item-1" class="board-item">1</div>
+        <div id="board-item-2" class="board-item">2</div>
+        <div id="board-item-3" class="board-item">3</div>
+        <div id="board-item-4" class="board-item">4</div>
+        <div id="board-item-5" class="board-item">5</div>
+        <div id="board-item-6" class="board-item">6</div>
+        <div id="board-item-7" class="board-item">7</div>
+        <div id="board-item-8" class="board-item">8</div>
+    </div>
+    <div id="visualization"></div>
+    <div id="controls">
+        <div class="heading">Board</div>
+        <div class="content">
+            <button id="randomize">Randomize</button>
+            <br />
+            <br />
+            <button id="customInput">Enter Custom State</button>
+        </div>
+
+        <div class="heading">Search</div>
+        <div class="content">
+            <label>Algorithm</label>
+            <select id="searchType">
+                <option value="breadthFirst">Breadth-First</option>
+                <option value="depthFirst">Depth-First</option>
+                <option value="greedyBest" selected>Greedy-Best</option>
+                <option value="aStar">A*</option>
+            </select>
+            <label>Iteration Limit</label>
+            <input type="number" id="iterationLimit" value="10000">
+            <label>Depth Limit</label>
+            <input type="number" id="depthLimit" value="0">
+            <label style="display: none;">
+                <input type="checkbox" id="visualizationCheck" checked>
+                Visualization
+            </label>
+            <label style="display: none;">
+                <input type="checkbox" id="expandedNodeCheck">
+                Early check optimization
+            </label>
+
+            <button id="search" style="margin-top: 20px; color: white;">Search</button>
+            <button id="searchStop" style="display: none;">Stop</button>
+        </div>
+
+        <div class="heading">Search Result</div>
+        <div id="searchResult" class="content"></div>
+    </div>
+
+
+    <!-- build:js -->
+    <script src="../node_modules/lodash/lodash.min.js"></script>
+    <script src="../node_modules/vis/dist/vis.min.js"></script>
+    <script src="../node_modules/body-scroll-lock/lib/bodyScrollLock.min.js"></script>
+    <script src="./js/utils.js"></script>
+    <script src="./js/node.js"></script>
+    <script src="./js/game.js"></script>
+    <script src="./js/board.js"></script>
+    <script src="./js/visualization.js"></script>
+    <script src="./js/search.js"></script>
+    <script src="./js/app.js"></script>
+    <script src="./js/countly.js"></script>
+    <script src="./js/olay.js"></script>
+    <!-- endbuild -->
+</body>
+</html>

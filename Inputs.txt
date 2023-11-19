@@ -1,0 +1,6 @@
+Inputs
+
+Greedy Algorihtm : Initial state of Board 
+A* Star Algorithm : 123 406 758
+BFS : 123 406 758 
+DFS : 150 482 763 / 168 430 725

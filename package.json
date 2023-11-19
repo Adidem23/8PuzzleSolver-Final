@@ -1,0 +1,33 @@
+{
+  "name": "8-puzzle-solver",
+  "scripts": {
+    "build": "./node_modules/.bin/gulp",
+    "build:watch": "./node_modules/.bin/gulp watch",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dgurkaynak/8-puzzle-solver.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dgurkaynak/8-puzzle-solver/issues"
+  },
+  "homepage": "https://github.com/dgurkaynak/8-puzzle-solver#readme",
+  "devDependencies": {
+    "body-scroll-lock": "^2.6.4",
+    "del": "^5.1.0",
+    "gulp": "^3.9.1",
+    "gulp-concat": "^2.6.0",
+    "gulp-html-replace": "^1.6.1",
+    "gulp-html-src": "^1.0.0",
+    "gulp-minify-css": "^1.2.4",
+    "gulp-rename": "^1.2.2",
+    "gulp-replace": "^1.0.0",
+    "gulp-uglify": "^3.0.2",
+    "lodash": "^4.17.21",
+    "vis": "^4.21.0"
+  }
+}
