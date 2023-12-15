@@ -11,3 +11,4 @@ This is 8-Puzzle-Problem Solver In which We can Input any intermediate State in 
 - Heuristic Based Search
 
 # Deployed Site Link : 
+https://deniz.co/8-puzzle-solver
